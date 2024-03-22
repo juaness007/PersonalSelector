@@ -15,6 +15,7 @@ class CitiesTableSeeder extends Seeder
     {
         $cities = [
             ['city_name' => 'Bogotá', 'departament_id' => 1],
+            ['city_name' => 'Medellín', 'departament_id' => 2],
             ['city_name' => 'Cali', 'departament_id' => 3],
             ['city_name' => 'Barranquilla', 'departament_id' => 4],
             ['city_name' => 'Cartagena', 'departament_id' => 5],

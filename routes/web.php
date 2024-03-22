@@ -81,6 +81,8 @@ Route::get('/vacancie/showC/{vacancie}', [VacancieController::class, 'showToCand
 Route::get('/vacancies/show-to-candidate/{vacancie}', [VacancieController::class, 'showToCandidate'])->name('vacancie.showToCandidate');
 Route::get('/vacancies/index-to-candidate', [VacancieController::class, 'indexToCandidate'])->name('vacancie.indexToCandidate');
 
+Route::get('/profile', [CandidateController::class, 'showProfile'])->name('profile.show');
+
 
 Route::get('/user/updatePassword', [UserController::class, 'updatePassword'])->name('user.updatePassword')->middleware('auth');
 Route::patch('/user/updatingPassword', [UserController::class, 'storePassword'])->name('user.storePassword');

@@ -30,6 +30,13 @@
                         <h3>Sobre ti!</h3>
                     </section>
                     <article class="button_password">
+    <section class="actions-card">
+        <div class="action">
+            <a href="{{ route('profile.show') }}">Ver Perfil</a>
+        </div>
+    </section>
+</article>
+                    <article class="button_password">
                         <section class="actions-card">
                             <div class="action" id="actionTwo">
                                 <a href="{{route('candidate.editProfile')}}">Actualizar Perfil Ocupacional</a>
@@ -74,6 +81,7 @@
                     </div>
                 </section>
             </section>
+       
     </main>
 
     @endsection

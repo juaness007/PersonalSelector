@@ -37,6 +37,7 @@ class EducationPersonController extends Controller
         $role_id = $user->role_id;
         $study_levels = study_level::all();
         $study_statuses = study_status::all();
+        $educationperson = Education_person::all();
 
         return view('/educations_person/create', [
             'study_levels' => $study_levels,

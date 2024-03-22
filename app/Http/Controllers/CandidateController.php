@@ -16,7 +16,8 @@ class CandidateController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $role_id = $user->role_id;
+        // $role_id = $user->role_id;
+        $role_id = $user->role_id ?? null;
         $experiencies = $user->experiences;
         $educations = $user->educations;
         $supports = $user->supports;
@@ -56,7 +57,8 @@ class CandidateController extends Controller
 
     public function editProfile() {
         $user = Auth::user();
-        $role_id = $user->role_id;
+        // $role_id = $user->role_id;
+        $role_id = $user->role_id ?? null;
     
         // Verificar si $user->candidate es null antes de acceder a occupational_profile
         $profile = null;
@@ -103,10 +105,21 @@ class CandidateController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Candidate $candidate)
+    public function showProfile()
     {
-        //
+        $user = Auth::user(); 
+        $role_id = $user->role_id;
+        $experiencies = $user->experiences;
+        $educations = $user->educations;
+        $supports = $user->supports;// Obtener el usuario autenticado
+
+        // Lógica para obtener los datos del perfil del candidato, por ejemplo:
+        $company = $user->company; // Suponiendo que la relación entre User y Company está definida correctamente en el modelo User
+
+        // Retornar la vista con los datos del perfil
+        return view('user.showprofile', compact('user', 'company', 'role_id', 'educations'));
     }
+
 
     /**
      * Show the form for editing the specified resource.
