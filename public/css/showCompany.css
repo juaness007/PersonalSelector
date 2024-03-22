@@ -4,17 +4,19 @@ body {
     padding: 0;
     background-image: url('/img/jo.jpg'); /* Imagen de fondo */
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vmax;
     background-position: center;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
     background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    
 }
 
 .headerCont h2 {

@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url('/img/jo.jpg');
+  background-image: url('/img/jo.jpg'); 
   background-size: cover;
   font-family: "Quicksand", sans-serif;
 }
@@ -709,4 +709,3 @@ ul .sub-Menu-recruiter{
   color: #333;
   line-height: 1.6;
 }
-
