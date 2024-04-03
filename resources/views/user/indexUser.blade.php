@@ -72,14 +72,6 @@
             </section>
             <br>
             <br>
-            <br>
-            <section class="user-content">
-                <section class="user_c_container">
-                    <div class="profile">
-                        <h3>Perfil Ocupacional: </h3>
-                        <p>{{$profile}}</p>
-                    </div>
-                </section>
             </section>
        
     </main>

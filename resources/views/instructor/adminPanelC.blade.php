@@ -28,13 +28,6 @@
             </article>
         </a>
 
-        <a href="{{route('instructor.selectors')}}">
-            <article class="option-admin">
-                <i class="bi bi-card-checklist"></i>
-                <h3 style="color: white;">Ver Seleccionadores</h3>
-            </article>
-        </a>
-
         <a href="{{route('instructor.instructors')}}">
             <article class="option-admin">
                 <i class="bi bi-gear-fill"></i>
