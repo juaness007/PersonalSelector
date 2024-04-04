@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{{asset('css/updateOccupation.css')}}">
     <title>Editar Rol De Usuario</title>
 </head>
 
 <body>
     @extends('layout.headerAdmin')
     @section('content')
-    <section class="container">
+    <div class="content">
         <section class="info">
             <h4>Rol Actual: {{$userToMod->role->name}}</h4>
         </section>
@@ -26,8 +26,7 @@
             </select><br>
             <button>Actualizar Rol</button>
         </form>
-    </section>
+    </div>
     @endsection
 </body>
-
 </html>
