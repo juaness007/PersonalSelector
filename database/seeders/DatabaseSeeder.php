@@ -28,8 +28,13 @@ class DatabaseSeeder extends Seeder
         $this->call([CitiesTableSeeder::class]);
         $this->call([RolesTableSeeder::class]);
         $this->call([UserTableSeeder::class]);
+        $this->call([CompaniesTableSeeders::class]);  
         $this->call([InstructorTableSeeder::class]);
         $this->call([OccupationsTableSeeder::class]);
         $this->call([WorkDaysTableSeeder::class]);
+        $this->call([ChargeSeeders::class]);
+        
+        
+
     }
 }

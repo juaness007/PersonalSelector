@@ -26,7 +26,11 @@ class CompaniesTableSeeders extends Seeder
             [
                 'nit' => '987654321-0',
                 'business_name' => 'Servicio Nacional de Aprendizaje',
+<<<<<<< HEAD
                 'phone' => '987654241',
+=======
+                'phone' => '987654321',
+>>>>>>> 9ab39e7bc563ee8e370917a8c676b927d18377d4
                 'country_id' => 37,
                 'city_id' => 2,
                 'email' => 'empresaB@example.com',
