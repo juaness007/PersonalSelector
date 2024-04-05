@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\applications;
+use App\Models\Vacancie;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ApplicationsController extends Controller
 {
@@ -26,9 +28,17 @@ class ApplicationsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request, Vacancie $vacancie)
     {
-        //
+        $candidate = Auth::user()->candidate;
+
+        $newApplication = new applications();
+        $newApplication->candidate_id = $candidate->id;
+        $newApplication->vacant_id = $vacancie->id;
+
+        $newApplication->save();
+
+        return redirect()->route('user.index')->with('message', "La postulacion " . $vacancie->vacancie_code . ' fue terminada exitosamente');
     }
 
     /**

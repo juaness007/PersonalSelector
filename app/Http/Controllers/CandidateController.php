@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UpdateProfileRequest;
 use App\Models\Candidate;
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -20,7 +19,7 @@ class CandidateController extends Controller
         $role_id = $user->role_id ?? null;
         $experiencies = $user->experiences;
         $educations = $user->educations;
-        $supports = $user->supports;
+        // $supports = $user->supports
 
         $profile = 'Perfil Sin Completar';
         if ($user->candidate !== null) {
@@ -50,7 +49,7 @@ class CandidateController extends Controller
             'role_id' => $role_id,
             'experiences' => $countExperiencies,
             'educations' => $countEducations,
-            'supports' => $countSupports,
+            // 'supports' => $countSupports,
             'profile' => $profile
         ]);
     }

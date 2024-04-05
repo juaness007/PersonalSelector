@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApplicationsController;
 use App\Mail\WelcomeMailable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -41,6 +42,9 @@ use App\Http\Livewire\VerVacantes;
 Route::get('/', function() {
     return view('index');
 })->name('system.index')->middleware('guest');
+
+
+Route::post('/application/store/{vacancie}', [ApplicationsController::class, 'store'])->name('application.store');
 
 
 Route::get('/createOccupation',[OccupationController::class,'create'])->name('occupations.create')->middleware('auth');

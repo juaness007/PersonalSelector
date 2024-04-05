@@ -74,6 +74,12 @@
                     <p>{{$vacancie->skills}}</p>
                 </article>
             </section>
+            <section class="post">
+                <form action="{{route('application.store', ['vacancie' => $vacancie->id])}}" method="post">
+                    @csrf
+                    <button>Postularse</button>
+                </form>
+            </section>
             <section class="educations">
             <section class="back">
                 <a href="{{ url()->previous() }}">Volver</a>
