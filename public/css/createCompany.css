@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&family=Quicksand:wght@300..700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
 
 body {
-  background-image: url('/img/jo.jpg');
-  background-size: cover;
-  font-family: "Quicksand", sans-serif;
+    background-image: url('/img/conny.jpg'); 
+    background-size: cover; 
+    background-repeat: repeat;
+    background-position: center; 
+    background-size: 100vw 100vmax;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
 }
 
 
@@ -40,7 +38,7 @@ input, select {
 }
 
 input[type="submit"] {
-    background-color: #585b5c;
+    background-color: #274690;
     color: #fff;
     border: none;
     padding: 12px;
@@ -50,7 +48,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #505455;
+    background-color: #274690;
 }
 
 .viaCompany {
@@ -59,7 +57,7 @@ input[type="submit"]:hover {
 }
 
 .viaCompany a{
-    background-color: rgb(66, 73, 75);
+    background-color: #274690;
     display: flex;
     justify-content: center;
     align-items: center;

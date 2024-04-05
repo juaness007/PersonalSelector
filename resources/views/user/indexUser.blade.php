@@ -15,6 +15,8 @@
             <section class="card-user">
                 <section class="card-header">
                     <h5>{{$user->name}} {{$user->last_name}}</h5>
+                    <br>
+                    <br>
                 </section>
                 <section class="card-body">
                     <article class="button_password">

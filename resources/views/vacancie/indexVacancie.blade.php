@@ -62,9 +62,6 @@
                         <form action="{{route('vacancies.edit', ['vacancie' => $vacant->id, 'company' => $company->id])}}" method="get">
                             <button class="updateBtn">Actualizar</button>
                         </form>
-                        <form action="{{route('vacancies.show', ['vacancie' => $vacant->id])}}" method="get">
-                            <button class="detailsBtn">Detalles</button>
-                        </form>
                     </td>
                 </tr>
                 @empty

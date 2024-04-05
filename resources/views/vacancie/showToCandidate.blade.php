@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('css/showVacantRecruiter.css')}}">
+    <link rel="stylesheet" href="{{asset('css/showVacant.css')}}">
+
+
     <title>Ver vacante</title>
 </head>
 
@@ -73,12 +75,6 @@
                 </article>
             </section>
             <section class="educations">
-
- 
-
-
-
-
             <section class="back">
                 <a href="{{ url()->previous() }}">Volver</a>
             </section>

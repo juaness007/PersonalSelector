@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&family=Quicksand:wght@300..700&display=swap');
-* {
 
-    font-family: "Quicksand", sans-serif;
-}
+
 body {
-    background-image: url('/img/jo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('/img/conny.jpg'); 
+    background-size: cover; 
+    background-repeat: repeat;
+    background-position: center; 
+    background-size: 100vw 100vmax;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
 }
-
 .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 50px;
 }
 
 .container .info {
@@ -40,7 +37,7 @@ body {
 .info form button {
     border: none;
     outline: none;
-    background-color: #576264;
+    background-color: #274690;
     width: 100%;
     color: white;
     height: 40px; /* Changed height for consistency */
@@ -132,12 +129,12 @@ body {
 }
 
 .add {
-    background-color: #4a4e52;
+    background-color: #3f5181;
     border-radius: 3px;
 }
 
 .view {
-    background-color: #747a8a;
+    background-color: #576CA8;
     border-radius: 3px;
 }
 
@@ -152,8 +149,8 @@ body {
 .option h5 {
     width: 65%;
     height: 100%;
-    background-color: #80747477;
-    color: black;
+    background-color: #274790c4;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&family=Quicksand:wght@300..700&display=swap');
 
+
 body {
+    background-image: url('/img/conny.jpg'); 
+    background-size: cover; 
+    background-repeat: repeat;
+    background-position: center; 
+    background-size: 100vw 100vmax;
     font-family: "Quicksand", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('/img/jo.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    color: #fff;
 }
 
+
 .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color:#274790a1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    
 }
 
 .form {
@@ -30,13 +34,13 @@ body {
 .form input, .form select, .form textarea {
     padding: 10px;
     margin-bottom: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #274790;
     border-radius: 4px;
 }
 
 .form button {
     padding: 10px 15px;
-    background-color: #666d6e;
+    background-color: #274790;
     color: rgba(255, 255, 255, 0.829);
     border: none;
     border-radius: 4px;

@@ -8,20 +8,22 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('/img/jo.jpg');
-    background-size: cover;
+    background-image: url('/img/conny.jpg'); 
     background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
     background-position: center;
 }
 
 .flex {
-    background-color: rgba(255, 255, 255, 0.8); /* Cambié el color de fondo a un blanco semi-transparente */
-    border: 2px solid #000000; /* Cambié el color del borde */
+    background-color: rgba(102, 119, 165, 0.664);
+    border: 2px solid #274690; 
     padding: 50px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4); /* Ajusté la sombra */
-    max-width: 1000px; /* Reduje el ancho máximo */
-    margin: 50px; /* Ajusté el margen */
-    border-radius: 20px; /* Añadí borde redondeado */
+    box-shadow: 10px 10px 20px rgba(255, 254, 254, 0.4); 
+    max-width: 3000px; 
+    margin: 50px; 
+    border-radius: 20px; 
 }
 
 img {
@@ -38,7 +40,7 @@ img {
 label {
     display: block;
     font-weight: bold;
-    color: #000000; /* Cambié el color del texto */
+    color: #000000; 
 }
 
 select,
@@ -55,7 +57,7 @@ input {
 
 button {
     padding: 15px 30px;
-    background-color: #cac39b; /* Cambié el color del botón */
+    background-color: #274690; 
     color: #fff;
     border: none;
     border-radius: 10px;

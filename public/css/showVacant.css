@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&family=Quicksand:wght@300..700&display=swap');
+
+
+body {
+    background-image: url('/img/conny.jpg'); 
+    background-size: cover; 
+    background-repeat: repeat;
+    background-position: center; 
+    background-size: 100vw 100vmax;
+    font-family: "Quicksand", sans-serif;
+    color: #000000;
+}
+/* Contenedor principal */
+.title-page {
+    background-color: #5970a3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card_info {
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones */
+.generalTitle {
+    margin-top: 30px;
+}
+
+.generalTitle h3 {
+    background-color: #274690;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.generalInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.otherGeneralInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.locationInfo article {
+    margin-top: 10px;
+}
+
+.skills article {
+    margin-top: 20px;
+}
+
+/* Volver */
+.back {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.back a {
+    background-color: #274690;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back a:hover {
+    background-color: #555;
+}

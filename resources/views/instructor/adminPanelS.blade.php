@@ -34,13 +34,6 @@
             </article>
         </a>
 
-        <a href="{{route('instructor.selectors')}}">
-            <article class="option-admin" style="background-color: #38445e;border-right: 7px solid #2193b0;">
-                <i class="bi bi-card-checklist"></i>
-                <h3>Ver Seleccionadores</h3>
-            </article>
-        </a>
-
         <a href="{{route('instructor.instructors')}}">
             <article class="option-admin">
                 <i class="bi bi-gear-fill"></i>

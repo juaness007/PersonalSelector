@@ -8,44 +8,41 @@
     <title>INICIO</title>
     <link rel="stylesheet" href="{{ asset('css/layouts.css') }}">
     <style>
-        /* Aquí agregamos estilos adicionales para los contenedores de los artículos */
-        .articulo-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-top: 20px;
-        }
+.articulo-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin-top: 20px;
+  margin-left:300px;
+}
 
-        .articulo {
-            width: 30%; /* Ancho de los artículos */
-            background-color: #fff; /* Color de fondo de los artículos */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
+.articulo {
+  width: 30%; 
+  background-color: #576CA8; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 10px 20px; 
+}
 
-        /* Estilos para el contenido del artículo */
-        .articulo p {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-        }
+.articulo p {
+  font-size: 16px;
+  color: #ffff;
+  line-height: 1.6;
+}
+
+
     </style>
 </head>
 <body>
 <header>
         <section class="interior">
-            <a href="" class="logo"><img src="{{ asset('img/Logo_EmplyHub.png') }}" alt="Emplay_Hub"></a>
+            <a href="" class="logo"><img src="{{ asset('img/Logo.png') }}" alt="Emplay_Hub"></a>
             <input type="checkbox" id="icon-menu"/>
             <label for="icon-menu">
                 <img src="{{ asset('img/menu.png') }}" class="menu-icono" alt="">
             </label>
             <nav class="navegacion">
-                <ul class="menu">
-                    <li><a class="activa" href="{{ route('system.index') }}">Home</a></li>
-    
-                </ul>
             </nav>
 
             <div id="barra-superior">
@@ -89,11 +86,10 @@
 
     <br>
     <div id="contenido-principal">
-        <!-- Aquí están los contenedores de los artículos -->
         <div class="articulo-container">
             <div class="articulo">
                 <h2>Bienvenido al Simulador de Seleccion de Personal</h2>
-                <p>na herramienta revolucionaria que agiliza el proceso de aprendizaje de contratación al evaluar las habilidades de los candidatos de manera precisa y objetiva. </p>
+                <p>Una herramienta revolucionaria que agiliza el proceso de aprendizaje de contratación al evaluar las habilidades de los candidatos de manera precisa y objetiva. </p>
             </div>
             <div class="articulo">
                 <h2>Desarrolladores</h2>

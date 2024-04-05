@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&family=Quicksand:wght@300..700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
-    font-family: "Quicksand", sans-serif;
-    background-image: url('/img/jo.jpg'); /* Imagen de fondo */
-    background-size: cover;
+    background-image: url('/img/conny.jpg'); 
+    background-size: cover; 
     background-repeat: repeat;
-    background-position: center;
-    margin: 0;
-    padding: 0;
+    background-position: center; 
+    background-size: 100vw 100vmax;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
 }
 
 .title {
@@ -65,7 +61,7 @@ table {
 }
 
 th {
-    background-color: #3c4344;
+    background-color: #274790;
     color: #fff;
     padding: 15px;
     text-align: left;

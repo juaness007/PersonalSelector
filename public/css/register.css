@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&family=Quicksand:wght@300..700&display=swap');
 
 body {
-    background-image: url('/img/jo.jpg');
+    background-image: url('/img/conny.jpg'); 
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     font-family: "Quicksand", sans-serif;
-    margin: 0; /* Añadimos un margen cero para evitar desplazamiento */
-}
+    color: #fff;
+  }
 
 main {
-    padding: 20px; /* Aumentamos el padding para separar el contenido del borde */
-    background-color: rgba(255, 255, 255, 0.8); /* Hacemos el fondo semi-transparente */
+    padding: 20px; 
+    background-color:transparent;
 }
 
 header {
@@ -18,7 +20,7 @@ header {
 }
 
 h2 {
-    background-color: #e6ddc0;
+    background-color: #274690;
     color: #fff;
     padding: 15px;
     border-radius: 5px;
@@ -42,23 +44,43 @@ form {
     padding: 20px;
 }
 
-input[type="text"], input[type="email"], select, textarea, input[type="submit"], input[type="date"] {
+input[type="text"], input[type="email"], input[type="password"],select, textarea, input[type="date"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    background-color: #888686;
+    background-color: #576CA8;
     font-size: 16px;
-    box-sizing: border-box; /* Añadimos box-sizing para incluir el padding y el borde en el ancho */
+    box-sizing: border-box; 
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+}
+input[type="submit"] {
+    width: auto;
+    padding: 16px 32px; 
+    margin: 10px 0; 
+    border-radius: 5px;
+    background-color: #576CA8;
+    font-size: 16px;
+    box-sizing: border-box; 
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+
+input[type="submit"]:hover {
+    background-color: #274690; 
 }
 
 button {
     padding: 15px 50px;
-    background-color: #b0c6cc;
+    background-color: #274690;
     color: #fff;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    margin-top: 10px; /* Añadimos un margen superior para separar el botón del resto del formulario */
+    margin-top: 10px; 
 }

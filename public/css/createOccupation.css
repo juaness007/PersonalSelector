@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&family=Quicksand:wght@300..700&display=swap');
-* {
 
-    font-family: "Quicksand", sans-serif;
-}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('/img/jo.jpg'); /* Imagen de fondo */
-    background-size: cover;
+    background-image: url('/img/conny.jpg'); 
+    background-size: cover; 
     background-repeat: repeat;
-    background-position: center;
+    background-position: center; 
+    background-size: 100vw 100vmax;
+    font-family: "Quicksand", sans-serif;
+    color: #000000;
 }
 
 .form {
@@ -37,7 +35,7 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-    background-color: #566063;
+    background-color: #274690;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -47,5 +45,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #83868a;
+    background-color: #274790d0;
 }
