@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('vacancie_studies', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('study_level_id');
-            $table->unsignedBigInteger('study_status_id');
+            // $table->unsignedBigInteger('study_status_id');
             $table->string('study_name');
             $table->foreign('study_level_id')->references('id')->on('study_levels');
-            $table->foreign('study_status_id')->references('id')->on('study_statuses');
+            // $table->foreign('study_status_id')->references('id')->on('study_statuses');
             $table->unsignedBigInteger('points');
             $table->timestamps();
         });

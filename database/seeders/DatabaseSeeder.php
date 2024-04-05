@@ -19,20 +19,21 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $this->call([StudyStatusTableSeeder::class]);
+        // $this->call([StudyStatusTableSeeder::class]);
         $this->call([SalaryTypesTableSeeder::class]);
         $this->call([StudyLevelsTableSeeder::class]);
         $this->call([DocumentTypesTableSeeder::class]);
         $this->call([CountriesTableSeeder::class]);
-        $this->call([DepartamentsTableSeeder::class]);
+        $this->call([DepartamentsTableSeeder::class]);       
         $this->call([CitiesTableSeeder::class]);
-        $this->call([RolesTableSeeder::class]);
-        $this->call([UserTableSeeder::class]);
-        $this->call([CompaniesTableSeeders::class]);  
-        $this->call([InstructorTableSeeder::class]);
         $this->call([OccupationsTableSeeder::class]);
+        $this->call([CompaniesTableSeeders::class]);
+        $this->call([ChargeSeeders::class]); 
+        $this->call([RolesTableSeeder::class]);
+        $this->call([UserTableSeeder::class]);         
+        $this->call([InstructorTableSeeder::class]);        
         $this->call([WorkDaysTableSeeder::class]);
-        $this->call([ChargeSeeders::class]);
+        
         
         
 

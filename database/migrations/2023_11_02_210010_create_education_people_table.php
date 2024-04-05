@@ -13,11 +13,14 @@ return new class extends Migration
     {
         Schema::create('education_people', function (Blueprint $table) {
             $table->id();
-            $table->string('shcool_name', 100);
+            $table->string('school_name', 100);
             $table->string('obtained_title');
-            $table->foreignId('study_status_id')->references('id')->on('study_statuses');
-            $table->foreignId('study_level_id')->references('id')->on('study_levels');
-            $table->foreignId('user_id')->references('id')->on('users');
+            
+            // Utilizando foreignId y constrained para los foreign keys
+            // $table->foreignId('study_status_id')->constrained('study_statuses');
+            $table->foreignId('study_level_id')->constrained('study_levels');
+            $table->foreignId('user_id')->constrained('users');
+            
             $table->timestamps();
         });
     }
