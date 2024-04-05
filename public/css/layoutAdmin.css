@@ -13,7 +13,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 12.4vh 87.6vh;
     grid-template-areas: "header header header"
-                         "sidebar view-info view-info";
+"sidebar view-info view-info";
 }
 
 .page .header {

@@ -68,8 +68,6 @@ Route::get('/myexperiencies/index', [PersonExperienceController::class, 'index']
 Route::delete('/myexperiencies/delete/{person_experience}', [PersonExperienceController::class, 'destroy'])->name('exp.destroy');
 Route::get('/myexperiences/edit/{person_experience}', [PersonExperienceController::class, 'edit'])->name('exp.edit')->middleware('auth');
 Route::patch('/myexperiences/update/{person_experience}', [PersonExperienceController::class, 'update'])->name('exp.update');
-Route::get('/supports/create', [CandidateSupportController::class, 'create'])->name('supports.create')->middleware('auth');
-Route::post('/supports/store', [CandidateSupportController::class, 'store'])->name('supports.store');
 Route::get('/vacancie/showC/{vacancie}', [VacancieController::class, 'showToCandidate'])->name('vacancie.showCandidate')->middleware('auth');
 Route::get('/vacancies/show-to-candidate/{vacancie}', [VacancieController::class, 'showToCandidate'])->name('vacancie.showToCandidate');
 Route::get('/vacancies/index-to-candidate', [VacancieController::class, 'indexToCandidate'])->name('vacancie.indexToCandidate');
@@ -95,7 +93,6 @@ Route::patch('/charges/update/{charge}/{company}', [ChargeController::class, 'up
 Route::get('/vacancies/index/{company}', [VacancieController::class, 'index'])->name('vacancies.index')->middleware('auth');
 Route::get('/vacancies/create', [VacancieController::class, 'create'])->name('vacancies.create')->middleware('auth');
 Route::post('/vacancies/store/{company}', [VacancieController::class, 'store'])->name('vacancies.store');
-Route::get('/vacancie/show/{vacancie}', [VacancieController::class, 'showToRecruiter'])->name('vacancies.show')->middleware('auth');
 Route::patch('/vacancie/editStatus/{vacancie}', [VacancieController::class, 'editStatus'])->name('vacancies.editStatus');
 Route::get('/vacancies/search/{company}', [VacancieController::class, 'findVacancieByCompany'])->name('vacancies.findByCompany');
 Route::get('/occupation/show/{occupation}', [OccupationController::class, 'show'])->name('occupation.show')->middleware('auth');
@@ -106,13 +103,6 @@ Route::post('/occupationFunctions/update/{occupation_function}/{occupation}', [O
 Route::delete('/occupationFunctions/delete/{occupation_function}/{occupation}', [OccupationFunctionController::class, 'destroy'])->name('occupationFunction.destroy');
 Route::get('/vacancie/edit/{vacancie}/{company}', [VacancieController::class, 'edit'])->name('vacancies.edit')->middleware('auth');
 Route::patch('/vacancie/update/{vacancie}/{company}', [VacancieController::class, 'update'])->name('vacancies.update');
-Route::get('/vacancie_studies/index', [VacancieStudyController::class, 'index'])->name('vacancie_studies.index');
-Route::post('/vacancie_studies/store/{vacancie}', [VacancieStudyController::class, 'store'])->name('vacancie_studies.store');
-Route::get('/vacancie_studies/{vacancieStudy}/edit', [VacancieStudyController::class, 'edit'])->name('vacancie_studies.edit');
-Route::put('/vacancie_studies/{vacancie_studies}', [VacancieStudyController::class, 'update'])->name('vacancie_studies.update');
-Route::delete('/vacancie_studies/{vacancieStudy}', [VacancieStudyController::class, 'destroy'])->name('vacancie_studies.destroy');
-Route::get('/vacancie/studies/create/{vacancie}', [VacancieStudyController::class, 'create'])->name('vacancie_studies.create');
-Route::get('/vacancie_studies/show', [VacancieStudyController::class, 'show'])->name('vacancie_studies.show')->middleware('auth');
 Route::get('/requisitions/index', [RequisitionController::class, 'index'])->name('requisition.index');
 Route::get('/requisitions/create', [RequisitionController::class, 'create'])->name('requisitions.create');
 Route::post('/requisitions/store', [RequisitionController::class, 'store'])->name('requisitions.store');
