@@ -58,7 +58,7 @@ Route::post('/user/register', [UserController::class, 'store'])->name('user.stor
 Route::get('/selectsoft/login', [LoginController::class, 'index'])->name('user.login')->middleware('guest');
 Route::post('/selectsoft/login/authenticate', [LoginController::class, 'authenticate'])->name('user.auth');
 Route::get('/forgotPassword', [ForgotPasswordController::class, 'index'])->name('forgotPassword.index')->middleware('guest');
-Route::post('/logout', [LogoutController::class, 'logout'])->name('user.logout');
+Route::post('/logout', [LogoutController::class, 'store'])->name('user.logout');
 Route::get('/candidate/home', [CandidateController::class, 'index'])->name('user.index')->middleware('auth');
 Route::get('/education/addEducation', [EducationPersonController::class, 'create'])->name('education.create')->middleware('auth');
 Route::post('/education/store', [EducationPersonController::class, 'store'])->name('education.store');
